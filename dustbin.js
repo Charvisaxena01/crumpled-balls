@@ -36,7 +36,7 @@ class dustbin
 			angleMode(RADIANS)
 			fill(255)
 			rotate(this.angle)
-			rect(0,0,this.wallThickness, this.dustbinHeight);
+			//rect(0,0,this.wallThickness, this.dustbinHeight);
 			pop()
 
 			push()
@@ -46,7 +46,7 @@ class dustbin
 			angleMode(RADIANS)
 			fill(255)
 			rotate(-1*this.angle)
-			rect(0,0,this.wallThickness, this.dustbinHeight);
+			//rect(0,0,this.wallThickness, this.dustbinHeight);
 			pop()
 
 			push()
@@ -55,9 +55,9 @@ class dustbin
 			//strokeWeight(4);
 			angleMode(RADIANS)
 			fill(255)
-			//imageMode(CENTER);
-			//image(this.image, 0,-this.dustbinHeight/2,this.dustbinWidth, this.dustbinHeight)
-			rect(0,0,this.dustbinWidth, this.wallThickness);
+			imageMode(CENTER);
+			image(this.image, 0,-this.dustbinHeight/2,this.dustbinWidth, this.dustbinHeight)
+			//rect(0,0,this.dustbinWidth, this.wallThickness);
 			pop()
 			
 	}
